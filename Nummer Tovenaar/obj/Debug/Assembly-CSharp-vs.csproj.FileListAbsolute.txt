@@ -1,0 +1,12 @@
+C:\Users\Frank\Documents\Unity\Nummer Tovenaar\Temp\bin\Debug\Assembly-CSharp.dll
+C:\Users\Frank\Documents\Unity\Nummer Tovenaar\Temp\bin\Debug\Assembly-CSharp.pdb
+C:\Users\Frank\Documents\Unity\Nummer Tovenaar\Temp\bin\Debug\UnityEditor.dll
+C:\Users\Frank\Documents\Unity\Nummer Tovenaar\Temp\bin\Debug\UnityEngine.dll
+C:\Users\Frank\Documents\Unity\Nummer Tovenaar\Temp\bin\Debug\UnityEngine.UI.dll
+C:\Users\Frank\Documents\Unity\Nummer Tovenaar\Temp\bin\Debug\Mono.Cecil.dll
+C:\Users\Frank\Documents\Unity\Nummer Tovenaar\Temp\bin\Debug\nunit.framework.dll
+C:\Users\Frank\Documents\Unity\Nummer Tovenaar\Temp\bin\Debug\Unity.DataContract.dll
+C:\Users\Frank\Documents\Unity\Nummer Tovenaar\Temp\bin\Debug\ICSharpCode.NRefactory.dll
+C:\Users\Frank\Documents\Unity\Nummer Tovenaar\obj\Debug\Assembly-CSharp-vs.csprojResolveAssemblyReference.cache
+C:\Users\Frank\Documents\Unity\Nummer Tovenaar\obj\Debug\Assembly-CSharp.dll
+C:\Users\Frank\Documents\Unity\Nummer Tovenaar\obj\Debug\Assembly-CSharp.pdb
