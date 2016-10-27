@@ -37,22 +37,15 @@ public class NummerTovenaar : MonoBehaviour {
 	void Update ()
     {
         if (Input.GetKeyDown(KeyCode.UpArrow)) {
-            WillekeurigNummer();
             min = guess;
             NextGuess();
         } else if (Input.GetKeyDown(KeyCode.DownArrow)) {
-            WillekeurigNummer();
             max = guess;
             NextGuess();
         } else if (Input.GetKeyDown(KeyCode.Return)) {
             print("Jeeej ik heb gewonnen!!");
             StartGame();
         }
-    }
-
-    void WillekeurigNummer()
-    {
-        guess = Random.Range(min, max);
     }
 
     void NextGuess()
