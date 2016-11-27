@@ -1,5 +1,6 @@
 ﻿using UnityEngine;
 using System.Collections;
+using UnityEngine.UI;
 
 public class NummerTovenaar : MonoBehaviour {
 
@@ -8,6 +9,9 @@ public class NummerTovenaar : MonoBehaviour {
     int min;
     int guess;
     int nummer;
+    int maxGuessAllowed = 10;
+
+    public Text text;
 
     void Start ()
     {
@@ -18,40 +22,29 @@ public class NummerTovenaar : MonoBehaviour {
     {
         max = 1000;
         min = 1;
-        guess = Random.Range(min, max);
-
-        print("==============================");
-        print("Welkom bij de Nummer Tovenaar!");
-        print("Neem een nummer in je gedachten, maar vertel hem niet!!");
-
-        print("Het hoogste getal dat je mag kiezen is " + max);
-        print("Het laagste getal dat je mag kiezen is " + min);
-
-        print("Is het getal hoger of lager dan " + guess + "?");
-        print("Pijltje omhoog voor hoger, Pijltje omlaag voor lager en enter als het getal gelijk is.");
-
-        max = max + 1;
+        NextGuess();
     }
 
-	// Update is called once per frame
-	void Update ()
+    public void RaadHoger()
     {
-        if (Input.GetKeyDown(KeyCode.UpArrow)) {
-            min = guess;
-            NextGuess();
-        } else if (Input.GetKeyDown(KeyCode.DownArrow)) {
-            max = guess;
-            NextGuess();
-        } else if (Input.GetKeyDown(KeyCode.Return)) {
-            print("Jeeej ik heb gewonnen!!");
-            StartGame();
-        }
+        min = guess;
+        NextGuess();
+    }
+
+    public void RaadLager()
+    {
+        max = guess;
+        NextGuess();
     }
 
     void NextGuess()
     {
-        guess = (max + min) / 2;
-        print("Is het getal hoger of lager dan " + guess + "?");
-        print("Pijltje omhoog voor hoger, Pijltje omlaag voor lager en enter als het getal gelijk is.");
+        guess = Random.Range(min,max + 1);
+        text.text = guess.ToString();
+        maxGuessAllowed = maxGuessAllowed - 1;
+        if (maxGuessAllowed <= 0)
+        {
+            Application.LoadLevel("Win");
+        }
     }
 }

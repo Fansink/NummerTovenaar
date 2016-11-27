@@ -11,7 +11,16 @@ public class LevelManager : MonoBehaviour {
     public void QuitGame(string name)
     {
         Application.Quit();
-        //Debug.Log("I want to quit");
+    }
+
+    public void WinGame(string name)
+    {
+        Application.LoadLevel(name);
+    }
+
+    public void LoseGame(string name)
+    {
+        Application.LoadLevel(name);
     }
 
 }
